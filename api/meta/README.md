@@ -1,30 +1,30 @@
 # Meta API
 
-This example makes use of the micro API metadata handler.
+这个例子使用 metadata handler 使用 micro API。
 
-This will allow us to write standard go-micro services and set the handler/endpoint via service discovery metadata.
+这将允许我们写标准的 go-micro 服务，然后通过服务发现 metadata 设置 handler/endpoint。
 
 ## Usage
 
-Run the micro API
+运行 micro API
 
 ```
 micro api
 ```
 
-Run this example. Note endpoint metadata when registering the handler
+运行这个例子。注意在注册 handler 时候的 endpoint metadata。
 
 ```
 go run meta.go
 ```
 
-Make a POST request to /example which will call go.micro.api.example Example.Call
+POST 请求 /example 这将调用 go.micro.api.example Example.Call
 
 ```
 curl -H 'Content-Type: application/json' -d '{"name": "john"}' "http://localhost:8080/example"
 ```
 
-Make a POST request to /foo/bar which will call go.micro.api.example Foo.Bar
+POST 请求 /foo/bar 这样调用 go.micro.api.example Foo.Bar
 
 ```
 curl -H 'Content-Type: application/json' -d '{}' http://localhost:8080/foo/bar

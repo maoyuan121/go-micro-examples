@@ -1,4 +1,3 @@
 # Go Config
 
-This example demonstrates how to use Go Config for dynamic configuration.
-
+这个例子演示如果使用 Go config 来搞动态配置。

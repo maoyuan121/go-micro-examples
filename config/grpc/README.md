@@ -1,6 +1,6 @@
 # gRPC Config Server
 
-This is an example implementation of a grpc config server
+这个例子实现一个 grpc 配置服务
 
 ## Get Started
 

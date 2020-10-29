@@ -1,6 +1,6 @@
 # Modify Config
 
-This is an example of modifying config in a file.
+这个例子是修改一个文件中配置文件。
 
 Note: We currently only support setting values in memory, not passing down to the source.
 

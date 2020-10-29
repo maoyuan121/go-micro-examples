@@ -1,6 +1,8 @@
 # Broker
 
-The [broker](https://godoc.org/github.com/micro/go-micro/broker#Broker) is an interface for PubSub.
+[broker](https://godoc.org/github.com/micro/go-micro/broker#Broker) 是 PubSub 的接口
+
+貌似默认用的是内存
 
 ## Contents
 

@@ -1,31 +1,30 @@
 # Proxy API
 
-This is an example of using the micro api as a http proxy.
+这个例子将 micro api 作为一个 http 反向代理。
 
-Using the api as a http proxy gives you complete control over what languages or libraries to use 
-at the API layer. In this case we're using go-web to easily register http services.
+使用 api 作为一个反向代理，你完全控制在 API 层使用任何语言和库。在这个这个例子中我们使用了 go-web 注册 http 服务。
 
 ## Usage
 
-Run micro api with http proxy handler
+使用 http 反向代理 运行 micro api 
 
 ```
 micro api --handler=http
 ```
 
-Run this proxy service
+运行代理 服务
 
 ```
 go run proxy.go
 ```
 
-Make a GET request to /example/call which will call go.micro.api.example Example.Call
+请求 /example/call 它将调用 go.micro.api.example Example.Call
 
 ```
 curl "http://localhost:8080/example/call?name=john"
 ```
 
-Make a POST request to /example/foo/bar which will call go.micro.api.example Foo.Bar
+post 请求 /example/foo/bar 它将调用 go.micro.api.example Foo.Bar
 
 ```
 curl -H 'Content-Type: application/json' -d '{}' http://localhost:8080/example/foo/bar

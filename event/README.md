@@ -1,22 +1,22 @@
 # Event
 
-This is an example of using the micro API as an event gateway with the event handler
+这个例子演示使用 micro API 结合 event handler 做一个事件网关
 
-A http request is formatted as an [event](https://github.com/micro/go-api/blob/master/proto/api.proto#L28L39) and published on the go-micro message broker.
+http 请求是一个 [event](https://github.com/micro/go-api/blob/master/proto/api.proto#L28L39) 格式，发布到 go-micro message broker。
 
 ## Contents
 
-- srv - A service which subscribes to events
+- srv - 订阅事件的服务
 
 ## Usage
 
-Run the micro api with the event handler set and with a namespace which used as part of the topic name
+使用 event handler 运行 micro api，命名空间作为 topic 名的一部分
 
 ```
 micro api --handler=event --namespace=go.micro.evt
 ```
 
-Run the service
+运行服务
 
 ```
 go run srv/main.go
@@ -24,7 +24,7 @@ go run srv/main.go
 
 ### Event format 
 
-On the receiving end the message will be formatted like so:
+事件格式如下：
 
 ```
 // A HTTP event as RPC
@@ -44,21 +44,21 @@ message Event {
 
 ### Publish Event
 
-Publishing an event is as simple as making a http post request
+发布事件很简单，搞个 http post 请求就行了
 
 ```
 curl -d '{"name": "john"}' http://localhost:8080/user/login
 ```
 
-This request will be published to the topic `go.micro.evt.user` with event name `login`
+这个请求将发布到 topic `go.micro.evt.user` 上，事件名为 `login`。
 
 ### Receiving Event
 
-A subscriber should be registered with the service for topic `go.micro.evt.user`
+订阅者应该使用 `go.micro.evt.user` 注册到服务
 
-The subscriber should take the proto.Event type. See srv/main.go for the code.
+订阅者应该接受 proto.Event type。见 srv/main.go
 
-The event received will look like the following
+接收到的事件看起来如下：
 
 ```
 {
