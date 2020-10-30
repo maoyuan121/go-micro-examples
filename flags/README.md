@@ -1,6 +1,6 @@
 # Flags
 
-This is an example of using command line flags
+演示使用命令行 flag
 
 ## Run the example
 

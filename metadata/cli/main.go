@@ -19,7 +19,7 @@ func main() {
 	// Set arbitrary headers in context
 	ctx := metadata.NewContext(context.Background(), map[string]string{
 		"User": "john",
-		"ID":   "1",
+		"UserID":   "1",
 	})
 
 	rsp, err := cl.Hello(ctx, &hello.Request{

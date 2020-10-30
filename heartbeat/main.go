@@ -10,8 +10,8 @@ import (
 func main() {
 	service := micro.NewService(
 		micro.Name("com.example.srv.foo"),
-		micro.RegisterTTL(time.Second*30),
-		micro.RegisterInterval(time.Second*15),
+		micro.RegisterTTL(time.Second*10),
+		micro.RegisterInterval(time.Second*5),
 	)
 	service.Init()
 

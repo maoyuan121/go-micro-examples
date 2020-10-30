@@ -1,8 +1,8 @@
 # Helloworld Service
 
-This is the Helloworld service
+这是 Helloworld service
 
-Generated with
+使用下面的命令生成
 
 ```
 micro new github.com/micro/services/helloworld --namespace=go.micro --type=srv

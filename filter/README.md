@@ -1,6 +1,6 @@
 # Filter
 
-Filter demonstrates how to filter requests in the client
+演示如果在 client 过滤请求
 
 ## Usage
 

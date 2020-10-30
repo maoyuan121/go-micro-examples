@@ -1,10 +1,10 @@
 # Command
 
-This is an example of a bot command as a microservice
+这个例子将 bot command 作为一个微服务
 
 ## Contents
 
-- main.go - is the main definition of the service and handler
+- main.go - 定义服务和 handler
 
 ## Run the example
 

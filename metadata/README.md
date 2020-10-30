@@ -1,13 +1,13 @@
 # Metadata
 
-This is an example of sending metadata/headers.
+演示发送 metadata/headers。
 
-HTTP headers sent to the micro api will be converted to metadata and forwarded on.
+发给 micro api 的 http 请求头会自动转换成 metadata。
 
 ## Contents
 
-- **srv** - an RPC service which extracts metadata
-- **cli** - an RPC client that calls the service once
+- **srv** - RPC 服务，它获取 metadata
+- **cli** - RPC 客户端，它调用 服务
 
 ## Run Service
 
