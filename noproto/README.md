@@ -1,15 +1,16 @@
 # noproto
 
-This example demonstrates how to use micro without protobuf.
+演示在没有 protobuf 的情况下使用 micro。
 
-Use micro with standard go types and use the json codec for marshalling. Services have multiple codecs and use the `Content-Type` 
-header to determine which to use. The client sends `Content-Type: application/json`. Because we can marshal standard Go types to 
-json there is no code generation or use of protobuf required.
+
+使用 micro 和标准 go 类型，并使用 json codec 进行 marshalling。服务有多个 codec，使用 `Content-Type` 请求头来确定使用哪个。
+client 使用 `Content-Type: application/json`。因为我们可以将标准 Go 类型转为 json，所以不需要生成代码或使用 protobuf。
+                                           
 
 ## Contents
 
-- main.go - is a micro greeter service
-- client - is a micro json client
+- main.go - 是一个 micro greeter  服务
+- client - 是一个 micro json client
 
 ## Run the example
 

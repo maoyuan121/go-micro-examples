@@ -1,6 +1,6 @@
 # Wrapper
 
-This is an example of how to use wrappers, a form of middleware
+这个例子演示如何使用 wrapper， 以一种中间件的形式。
 
-- main.go - the service with a log handler wrapper
-- cli/main.go - the client with a log client wrapper
+- main.go - 使用了 log handler wrapper 的 服务
+- cli/main.go - 使用了 log client wrapper 的 client

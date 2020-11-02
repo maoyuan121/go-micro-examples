@@ -1,5 +1,5 @@
 # Hello World
 
-A simple hello world example of using the web service interface. 
+这个例子使用 web service 接口实现一个简单的 hello world。
 
 This is to enable development of micro web apps

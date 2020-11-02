@@ -2,7 +2,9 @@
 
 This directory contains templates generated with the `micro new [service]` command.
 
-Find out more on the usage at [micro/new](https://github.com/micro/micro/tree/master/new).
+这个目录包含了使用 `micro new [service]` 命令生成的代码。
+
+更多用法，请查看 [micro/new](https://github.com/micro/micro/tree/master/new)。
 
 ## How they were generated
 

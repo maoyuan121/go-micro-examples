@@ -1,8 +1,8 @@
 # Mocking
 
-Thie example demonstrates how to mock the helloworld service
+这个例子演示如何 mock helloworld 服务
 
-The generated protos create a `Service` interface used by the client. This can simply be mocked.
+根据 proto 生成的代码包含了一个 `Service` 接口。可以很容易的 mock。
 
 ```go
 type GreeterService interface {
@@ -10,7 +10,7 @@ type GreeterService interface {
 }
 ```
 
-Where the `GreeterService` is used we can instead pass in the mock which returns the expected response rather than calling a service.
+这个 `GreeterService` 可以很容易的使用 mock 来代替。
 
 ## Mock Client
 
@@ -31,7 +31,7 @@ func NewGreeterService() proto.GreeterService {
 
 ## Use Mock
 
-In the test environment we will use the mock client
+在测试环境中，我们可以使用 mock client。
 
 ```go
 func main() {

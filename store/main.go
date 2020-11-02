@@ -8,6 +8,8 @@ import (
 	"github.com/micro/go-micro/v2/store"
 )
 
+// 默认的 store 是 内存
+
 func main() {
 	service := micro.NewService(
 		micro.Name("go.micro.service.store-test"),
