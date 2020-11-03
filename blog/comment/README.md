@@ -1,8 +1,8 @@
 # Comment Service
 
-This is the Comment service
+评论服务
 
-Generated with
+用下面的命令生成
 
 ```
 micro new --namespace=go.micro --type=service comment
@@ -22,9 +22,9 @@ micro new --namespace=go.micro --type=service comment
 
 ## Dependencies
 
-Micro services depend on service discovery. The default is multicast DNS, a zeroconf system.
+Micro  服务依赖服务发现。模式是 MDNS，一个零配置的系统。
 
-In the event you need a resilient multi-host setup we recommend etcd.
+如果你需要一个灵活的多主机设置，我们推荐 etcd。
 
 ```
 # install etcd
@@ -36,20 +36,20 @@ etcd
 
 ## Usage
 
-A Makefile is included for convenience
+为了方便，这里有个 Makefile 文件
 
-Build the binary
+编译二进制
 
 ```
 make build
 ```
 
-Run the service
+运行服务
 ```
 ./comment-service
 ```
 
-Build a docker image
+构建一个 docker image
 ```
 make docker
 ```

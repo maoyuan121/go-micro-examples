@@ -1,36 +1,36 @@
 # Form
 
-This rudimentary example demonstrates how to access a form and multipart form when writing API services
+这个例子演示在 API service 中如何访问 form 和 multipart form。
 
 ## Contents
 
-- web - is the web front end with the form
-- api - is the api service
+- web - 是一个 web 前端，有一个 form
+- api - 是一个 api 服务
 
 ## Usage
 
-Run the micro api
+运行 micro api
 
 ```
 micro api --handler=api
 ```
 
-Run the micro web
+运行 micro web
 
 ```
 micro web
 ```
 
-Run the api service
+运行 api 服务
 
 ``` 
 go run api/main.go
 ```
 
-Run the web service
+运行 web 服务
 
 ```
 go run web/main.go
 ```
 
-Browse to localhost:8082/form
+浏览 localhost:8082/form

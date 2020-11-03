@@ -6,7 +6,8 @@ His README (with required changes):
 
 The API Endpoint accepts HTTP requests at `localhost:8080` and then spawns a number of RPC requests to the backend services.
 
-_Note:_ Data for each of the services is stored in JSON flat files under the `/data/` directory. In reality each of the services could choose their own specialty datastore. The Geo service for example could use PostGis or any other database specializing in geospacial queries.
+_Note:_ Data for each of the services is stored in JSON flat files under the `/data/` directory. In reality each of the services could choose their own specialty datastore. 
+The Geo service for example could use PostGis or any other database specializing in geospacial queries.
 
 ### Setup
 

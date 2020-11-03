@@ -29,6 +29,7 @@ func main() {
 	service := web.NewService(
 		web.Name("go.micro.web.form"),
 	)
+
 	service.Init()
 	service.HandleFunc("/", index)
 	service.Run()
